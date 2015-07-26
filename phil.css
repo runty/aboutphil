@@ -15,6 +15,13 @@ h1 {
             filter: drop-shadow( 1px 1px 1px #e5ddc1 );
 }
 
+h2 {
+	padding: 55px;
+	font-weight: 100;
+	color: #85683C;
+	font-size: 28px;
+}
+
 li {
 	list-style:none;
 }
