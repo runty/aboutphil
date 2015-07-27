@@ -1,15 +1,29 @@
 body {
 	font-family: 'Crete Round', serif;
-  	background-image: url("images/phil.jpg");
-  	background-color: #282823;
-  	background-size:cover;
+  	background-color: #1d1c1c;
+  	background-image:url("images/phil.jpg");
+	   background-size:cover;
   	background-repeat:no-repeat;
- }
+  	 }
+ 
+@media screen and (orientation: portrait)
+{
+    body {
+	    background-position: center top;
+	}
+}
+
+@media screen and (orientation: landscape)
+{
+    body { 
+	    background-position: center center;
+	}
+}
  
 h1 {
+	color: #1d1c1c; 
 	padding: 5px;
 	font-weight: 100;
-	color: #1d1c1c;
 	font-size: 64px;
 	-webkit-filter: drop-shadow( 1px 1px 1px #e5ddc1 );
             filter: drop-shadow( 1px 1px 1px #e5ddc1 );
