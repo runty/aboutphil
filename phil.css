@@ -2,9 +2,9 @@ body {
 	font-family: 'Crete Round', serif;
   	background-color: #1d1c1c;
   	background-image:url("images/phil.jpg");
-	   background-size:cover;
+	background-size:cover;
   	background-repeat:no-repeat;
-  	 }
+}
  
 @media screen and (orientation: portrait)
 {
@@ -20,11 +20,11 @@ body {
 	}
 }
 
-@media (min-width:1025px) and (orientation: landscape)
+@media only screen and (orientation: landscape) and (min-device-width : 736px)
 {
-	body {
-		background-image:url("images/philw.jpg");
-		background-position: center center;
+    body { 
+	    background-image:url("images/philw.jpg");
+	    background-position: center center;
 	}
 }
  
@@ -42,6 +42,8 @@ h2 {
 	font-weight: 100;
 	color: #85683C;
 	font-size: 28px;
+	-webkit-filter: drop-shadow( 1px 1px 1px #1d1c1c );
+            filter: drop-shadow( 1px 1px 1px #1d1c1c );
 }
 
 li {
@@ -49,11 +51,36 @@ li {
 }
 
 .social-button img {
-	width: 60px;
+	width: 64px;
 	border: 0;
 	box-shadow: 0;
 	padding: 10px;
 	-webkit-filter: drop-shadow( 1px 1px 1px #e5ddc1 );
             filter: drop-shadow( 1px 1px 1px #e5ddc1 );
+}
+
+@media (min-device-width:1025px) 
+{
+	.social-button img {
+		width: 40px;
+	}
+}
+
+@media (min-device-height:767px) 
+{
+	.social-button img {
+		width: 40px;
+	}
+	
+}
+
+
+@media screen and (min-height:1000px)
+{
+	#bottom{
+    	position: fixed; 
+		width:100%;
+		bottom:0;
+	}
 }
 
